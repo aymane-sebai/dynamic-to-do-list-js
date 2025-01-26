@@ -1,3 +1,4 @@
+// Function to add a task
 function addTask() {
   // Retrieve and trim the input value
   const taskInput = document.getElementById('task-input');
@@ -17,7 +18,7 @@ function addTask() {
   // Create a remove button
   const removeButton = document.createElement('button');
   removeButton.textContent = 'Remove';
-  removeButton.classList.add('remove-btn'); // Use classList.add instead of className
+  removeButton.className = 'remove-btn';
 
   // Assign the onclick event to remove the task
   removeButton.onclick = () => {
